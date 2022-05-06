@@ -8,17 +8,11 @@ function Login() {
   return (
     <div id="login-page">
       <div id="login-card">
-        <h2>Welcome to DeChat!</h2>
+        <h2 className="login__banner">Welcome to DeChat</h2>
 
         <div className="login-button google"
         onClick={()=>auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}>
-          <GoogleOutlined></GoogleOutlined>Sign In ith Google
-        </div>
-        <br></br>
-        <br></br>
-        <div className="login-button facebook">
-          <FacebookOutlined></FacebookOutlined>
-          Sign In with Facebook
+          <GoogleOutlined></GoogleOutlined>Sign In with Google
         </div>
       </div>
     </div>
